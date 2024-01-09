@@ -3,9 +3,10 @@ html {
 }
 
 body {
-    background-color: #3c3c3c;
+    background-color: #172523;
     color: #ffffff; /*při pohledu na web je i bílá barva textu hodně dominantní, proto se ji hodí dát jako výchozí */
     margin: 0;
+    background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem);
 }
 
 main,
@@ -22,6 +23,7 @@ h3 {
 }
 
 h1 {
+    color: #F6766C;
     font-size: 4rem;
     line-height: 1.125; /* 4,5rem děleno 4rem ; bezrozměrná jednotka; line-height bude 0.6546 násobek 110px */
     margin-top: 2rem;
@@ -48,6 +50,7 @@ article {
 }
 
 small {
+    color: #F6766C;
     font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.25em;
@@ -61,12 +64,12 @@ small {
     padding-block: 0.2rem;
 }
 
-h2 small {
-    color: #ff559c;
+h1 small {
+    color: #FFFFFF;
 }
 
 a {
-    color: #ff559c;
+    color: #F6766C;
     /* text-decoration: none; -- původně jsem si myslel, že to tam není, ale při zoomu tam prostě je teňounký */
     font-weight: 800;
 }
@@ -87,9 +90,11 @@ nav {
 }
 
 nav a {
+    color: #ffffff;
     font-size: 1rem;
     line-height: 1.25;
     text-transform: uppercase;
+    text-decoration: none;
     display: inline-block;
     padding: 0.5rem 0.75rem;
 }
@@ -127,3 +132,10 @@ footer {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
 }
+
+.image-container img{
+    width: 306px;
+    height: 486px;
+    display: block;
+}
+
