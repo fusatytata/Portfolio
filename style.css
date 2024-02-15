@@ -105,18 +105,20 @@ img {
 }
 
 nav {
-    text-align: right;
-    padding: 1rem 0.75rem;
-    font-size: 0; /*abychom se zbavili mezer mezi odkazy, pak změníme */
+    margin: 1rem 0.75rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 nav a {
+    text-align: right; /* Ošetřujeme tím situaci, pokud by se text zalomil na více řádků, tak to bude zalomené podle logiky věci - doprava. Bez toho se zalomený text hodí výchozím stylem - doleva */
     color: #ffffff;
     font-size: 1rem;
     line-height: 1.25;
     text-transform: uppercase;
     text-decoration: none;
-    display: inline-block;
     padding: 0.5rem 0.75rem;
 }
 
