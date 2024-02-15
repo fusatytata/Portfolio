@@ -7,12 +7,9 @@ body {
     color: #ffffff; /*při pohledu na web je i bílá barva textu hodně dominantní, proto se ji hodí dát jako výchozí */
     margin: 0;
     background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
-}
-
-main,
-header div {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    background-size: 100%, 19.125rem 24rem;
+    background-repeat: no-repeat;
+    background-position: bottom, 2.5rem 2.75rem;
 }
 
 h1,
@@ -26,7 +23,7 @@ h1 {
     color: #F6766C;
     font-size: 4rem;
     line-height: 1.125; /* 4,5rem děleno 4rem ; bezrozměrná jednotka; line-height bude 0.6546 násobek 110px */
-    margin-top: 2rem;
+    margin-top: 14.25rem;
     margin-bottom: 0.5rem;
     /*nepsat takto: margin: 2rem 0 0.5rem; klidně rozepisovat ty hodnoty -bottom, -top ; potřebuju hned při pohledu vedet, o co jde */
 }
@@ -43,6 +40,30 @@ h3 {
     line-height: 1.15;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.introduction div {
+    display: flow-root; /* řeší margin collapsing h1 - tohle zabrání všem jejím marginům, aby vylezly ven - margin h1 se deleguje na jejího rodiče */
+}
+
+main,
+.introduction div {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+/* @media (min-width: 90rem) {
+    .wrapper {
+        
+        display: flex;
+        justify-content: center;
+        
+*/
+
+@media (min-width: 90rem) {
+    .content {
+        max-width: 69.5rem;
+    }
 }
 
 article {
