@@ -6,7 +6,7 @@ body {
     background-color: #172523;
     color: #ffffff; /*při pohledu na web je i bílá barva textu hodně dominantní, proto se ji hodí dát jako výchozí */
     margin: 0;
-    background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem);
+    background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
 }
 
 main,
