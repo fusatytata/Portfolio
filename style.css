@@ -20,7 +20,7 @@ h3 {
 }
 
 h1 {
-    color: #F6766C;
+    color: #f6766c;
     font-size: 4rem;
     line-height: 1.125; /* 4,5rem děleno 4rem ; bezrozměrná jednotka; line-height bude 0.6546 násobek 110px */
     margin-top: 14.25rem;
@@ -71,7 +71,7 @@ article {
 }
 
 small {
-    color: #F6766C;
+    color: #f6766c;
     font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.25em;
@@ -86,11 +86,11 @@ small {
 }
 
 h1 small {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 a {
-    color: #F6766C;
+    color: #f6766c;
     /* text-decoration: none; -- původně jsem si myslel, že to tam není, ale při zoomu tam prostě je teňounký*/
     font-weight: 800;
 }
@@ -156,9 +156,10 @@ footer {
     margin-right: 1.25rem;
 }
 
-.image-container img{
+.image-container img {
     width: 306px;
     height: 486px;
     display: block;
 }
 
+/*skoky v 500, 1000, 1600 */
