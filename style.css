@@ -7,9 +7,9 @@ body {
     color: #ffffff; /*při pohledu na web je i bílá barva textu hodně dominantní, proto se ji hodí dát jako výchozí */
     margin: 0;
     background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
-    background-size: 100%, 19.125rem 24rem;
+    background-size: 100%, 42.375rem 67.5rem;
     background-repeat: no-repeat;
-    background-position: bottom, 2.5rem 2.75rem;
+    background-position: bottom, left 47.4rem bottom 185rem;
 }
 
 h1,
