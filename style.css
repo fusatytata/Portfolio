@@ -9,7 +9,7 @@ body {
     background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
     background-size: 100%, 42.375rem 67.5rem;
     background-repeat: no-repeat;
-    background-position: bottom, left 47.4rem bottom 185rem;
+    background-position: bottom, left 47.4rem bottom 183rem;
 }
 
 h1,
@@ -126,6 +126,7 @@ h1 small {
 @media (min-width: 90rem){
     h1 small {
         margin-bottom: 1.5rem;
+        font-size:1.375rem;
     }
 }
 
@@ -142,6 +143,13 @@ a:hover {
 img {
     display: block;
     margin-bottom: 1.5rem;
+}
+
+@media (min-width: 90rem) {
+    article img {
+        width: 648px;
+        height: 486px;
+    }
 }
 
 nav {
