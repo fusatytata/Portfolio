@@ -145,24 +145,12 @@ a:hover {
     color: #ffffff;
 }
 
-.project_name{
-    order: -2;
-}
-
-.project_image-container {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 648px;
-}
-
 img {
     display: block;
     margin-bottom: 1.5rem;
 
     width: 100%;
     height: auto;
-
-    order: -1;
 }
 
 @media (min-width: 90rem) {
@@ -254,13 +242,11 @@ footer {
 /*nezapomenout na 5.375rem od spodní hrany footeru do spodního okraje stránky */
 /*skoky v 500, 1000 - zvětšitobrázky, 1600 */
 
-@media (min-width: 5rem) {
-    .contacts {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        margin-bottom: 5.375rem;
-    }
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 5.375rem;
 }
 
 .contacts p {
@@ -300,7 +286,6 @@ footer {
     .project {
         max-width: initial;
 
-        display: flex;
         flex-direction: row;
         column-gap: 3rem;
 
@@ -309,35 +294,31 @@ footer {
     }
 }
 
-@media (min-width: 5rem){
-    .project_description{
-        display: contents;
-    }
+.project_name {
+    order: -2;
 }
 
-@media (min-width: 60rem){
-    .project_description{
+.project_description {
+    display: contents;
+}
+
+@media (min-width: 60rem) {
+    .project_description {
         display: block;
     }
 }
 
-@media (min-width: 5rem){
-    .project_image-container{
-        display: contents;
-    }
+.project_image-container {
+    order: -1;
 }
 
-@media (min-width: 60rem){
-    .project_image-container{
-        display: block;
-    }
-}
+@media (min-width: 60rem) {
+    .project_image-container {
 
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 648px;
 
-
-/*
-@media (min-width: 5rem) {
-    .project__description {
-        display: contents;
+        order: 0;
     }
 }
