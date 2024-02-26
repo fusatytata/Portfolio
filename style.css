@@ -147,10 +147,16 @@ a:hover {
 
 img {
     display: block;
-    margin-bottom: 1.5rem;
 
-    width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+/* TODO: přidat tento obrázek k projects, ať to tu nelítá 
+(podívat se na plugin, který TODO vysvítí */
+
+article img {
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 90rem) {
@@ -217,60 +223,11 @@ ul {
   toto bylo špatné řešení, moc křehké
   */
 
-footer {
-    margin-bottom: 1.875rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 31rem) {
-    footer {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: calc(69.5rem + 2 * 3rem);
-    }
-}
-
-.image-container img {
-    width: 306px;
-    height: 486px;
-    display: block;
-}
-
-/*nezapomenout na 5.375rem od spodní hrany footeru do spodního okraje stránky */
-/*skoky v 500, 1000 - zvětšitobrázky, 1600 */
-
-.contacts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 5.375rem;
-}
-
-.contacts p {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: min-content; /*nebo zde může být tvrdá hodnota, číslo, délka, centa */
-}
-
-.contacts-image {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 192px;
-}
-
-.contacts-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (min-width: 40rem) {
-    footer img {
-        margin-bottom: 0;
-    }
-}
+/*
+*
+* PROJECT
+*
+*/
 
 .project {
     display: flex;
@@ -287,6 +244,18 @@ footer {
         max-width: initial;
 
         flex-direction: row;
+        column-gap: 3rem;
+
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    .project:nth-child(odd) {
+        max-width: initial;
+
+        flex-direction: row-reverse;
         column-gap: 3rem;
 
         margin-top: 2rem;
@@ -314,11 +283,50 @@ footer {
 
 @media (min-width: 60rem) {
     .project_image-container {
-
         flex-grow: 0;
         flex-shrink: 1;
-        flex-basis: 648px;
+        flex-basis: 40.5rem;
 
         order: 0;
     }
+}
+
+/*
+*
+* CONTACTS 
+*
+*/
+
+.contacts {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5.375rem;
+}
+
+@media (min-width: 31rem) {
+    .contacts {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: calc(69.5rem + 2 * 3rem);
+    }
+}
+
+.contacts__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contacts__text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: min-content; /*nebo zde může být tvrdá hodnota, číslo, délka, centa */
+}
+
+.contacts__photo {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 12rem; /*mohly by tu být i px, ale obrázek se nebude zvětšovat při zvětšení písma - teď (při remech) se to zvětšuje  */
 }
