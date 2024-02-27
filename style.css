@@ -2,9 +2,6 @@
 udělat screenshot, vypnout border-box a porovnat to ve fotopí/pxlburger
 */
 
-
-
-
 /***** GENERIC *****/
 * {
     box-sizing: border-box;
@@ -18,10 +15,19 @@ body {
     background-color: #172523;
     color: #ffffff; /*při pohledu na web je i bílá barva textu hodně dominantní, proto se ji hodí dát jako výchozí */
     margin: 0;
-    background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
-    background-size: 100%, 42.375rem 67.5rem;
+    background-image: linear-gradient(to top, rgb(230, 230, 230), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
+    background-size: 100%, 19.125rem 30.375rem;
     background-repeat: no-repeat;
-    background-position: bottom, left 47.4rem bottom 183rem;
+    background-position: bottom, left 2.75rem top -3.75rem;
+}
+
+@media (min-width: 60rem) {
+    body {
+        background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
+        background-size: 100%, 42.375rem 67.5rem;
+        background-repeat: no-repeat;
+        background-position: bottom, left 47.4rem bottom 183rem;
+    }
 }
 
 a {
@@ -119,7 +125,6 @@ h3 {
     }
 }
 
-/* TODO převést na třídu - ne Overheading :))))))) */
 .caption {
     color: #f6766c;
     font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
