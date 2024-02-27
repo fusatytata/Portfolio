@@ -1,3 +1,15 @@
+/* TODO architecture v roadmapě 
+udělat screenshot, vypnout border-box a porovnat to ve fotopí/pxlburger
+*/
+
+
+
+
+/***** GENERIC *****/
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
 }
@@ -10,6 +22,46 @@ body {
     background-size: 100%, 42.375rem 67.5rem;
     background-repeat: no-repeat;
     background-position: bottom, left 47.4rem bottom 183rem;
+}
+
+a {
+    color: #f6766c;
+    /* text-decoration: none; -- původně jsem si myslel, že to tam není, ale při zoomu tam prostě je teňounký*/
+    font-weight: 800;
+}
+
+a:hover {
+    color: #f6766c;
+}
+
+img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-bottom: 2rem;
+    max-width: 29.125rem;
+}
+
+p,
+li {
+    font-size: 1.375rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style-type: "— ";
 }
 
 h1,
@@ -66,38 +118,9 @@ h3 {
         margin-bottom: 1.5rem;
     }
 }
-.introduction {
-    display: flow-root; /* řeší margin collapsing h1 - tohle zabrání všem jejím marginům, aby vylezly ven - margin h1 se deleguje na jejího rodiče */
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-@media (min-width: 31rem) {
-    .introduction {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: calc(69.5rem + 2 * 3rem);
-    }
-}
-
-main {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 31rem) {
-    main {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: calc(69.5rem + 2 * 3rem);
-    }
-}
-
-small {
+/* TODO převést na třídu - ne Overheading :))))))) */
+.caption {
     color: #f6766c;
     font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
     font-size: 1rem;
@@ -113,42 +136,43 @@ small {
 }
 
 @media (min-width: 40rem) {
-    small {
+    .caption {
         font-size: 1.375rem;
         line-height: 1.25;
         margin-bottom: 0.875rem;
     }
 }
 
-h1 small {
+h1 .caption {
     color: #ffffff;
 }
 
-@media (min-width: 90rem) {
-    h1 small {
-        margin-bottom: 1.25rem;
-        font-size: 1.375rem;
+@media (min-width: 40rem) {
+    h1 .captions {
+        margin-bottom: 1.25rem; /* TODO nechat bottom nebo zvětšin mg top h1 a tohle úplně smazat? Nechat, protože h1 tu bude a .caption může zmizet - menší důležitost. */
     }
 }
 
-a {
-    color: #f6766c;
-    /* text-decoration: none; -- původně jsem si myslel, že to tam není, ale při zoomu tam prostě je teňounký*/
-    font-weight: 800;
+/***** COMPONENTS *****/
+
+/* TODO převést na třídu
+mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti jako např. tato - */
+.main {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-a:hover {
-    color: #f6766c;
+@media (min-width: 31rem) {
+    .main {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: calc(69.5rem + 2 * 3rem);
+    }
 }
 
-img {
-    display: block;
-
-    max-width: 100%;
-    height: auto;
-}
-
-nav {
+.navigation {
     margin: 1rem 0.75rem;
 
     display: flex;
@@ -156,7 +180,7 @@ nav {
     justify-content: flex-end;
 }
 
-nav a {
+.navigation a {
     text-align: right; /* Ošetřujeme tím situaci, pokud by se text zalomil na více řádků, tak to bude zalomené podle logiky věci - doprava. Bez toho se zalomený text hodí výchozím stylem - doleva */
     color: #ffffff;
     font-size: 1rem;
@@ -166,27 +190,20 @@ nav a {
     padding: 0.5rem 0.75rem;
 }
 
-p,
-li {
-    font-size: 1.375rem;
-    line-height: 1.5;
-    font-weight: 400;
-    margin-top: 0;
+.introduction {
+    display: flow-root; /* řeší margin collapsing h1 - tohle zabrání všem jejím marginům, aby vylezly ven - margin h1 se deleguje na jejího rodiče */
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
-    margin-bottom: 2rem;
-    max-width: 29.125rem;
-}
-
-ul li {
-    list-style-type: "— ";
-}
-
-ul {
-    padding-left: 1.75rem;
-    margin-top: 0;
-    margin-bottom: 0;
+@media (min-width: 31rem) {
+    .introduction {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: calc(69.5rem + 2 * 3rem);
+    }
 }
 
 /*
