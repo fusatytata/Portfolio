@@ -48,8 +48,8 @@ img {
 }
 
 p {
-    margin-bottom: 2rem;
     max-width: 29.125rem;
+    margin-bottom: 0;
 }
 
 p,
@@ -98,14 +98,15 @@ h1 {
 h2 {
     font-size: 3rem;
     line-height: 1.1;
-    margin-top: 4rem;
+    margin-top: 0rem;/* $$$ */
     margin-bottom: 0.5rem;
 }
+
 
 @media (min-width: 40rem) {
     h2 {
         font-size: 4rem;
-        margin-top: 5.75rem;
+        margin-top: 0rem;/* $$$ */
         margin-bottom: 1.125rem;
     }
 }
@@ -201,6 +202,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     padding-right: 1.25rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4rem;
 }
 
 @media (min-width: 31rem) {
@@ -211,6 +213,13 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     }
 }
 
+.technologies{
+    margin-bottom: 4rem;
+}
+
+.other__skills{
+    margin-bottom: 4rem;
+}
 /*
 *
 * PROJECT
@@ -223,8 +232,8 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 
     max-width: 36rem;
 
-    margin-top: 1.5rem;
-    margin-bottom: 2.25rem;
+    margin-top: 0rem; /* $$$ */
+    margin-bottom: 2.15rem;
 }
 
 @media (min-width: 60rem) {
@@ -234,12 +243,16 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
         flex-direction: row;
         column-gap: 3rem;
 
-        margin-top: 2rem; /* zadávat spíše mg bottom, ať to je jednodušší */
+        margin-top: 0rem; /* $$$ */ /* zadávat spíše mg bottom, ať to je jednodušší */
         margin-bottom: 4rem;
     }
     .project:nth-child(odd) {
         flex-direction: row-reverse;
     }
+}
+
+.project:last-child {
+    margin-bottom: 4rem;
 }
 
 .project__description {
@@ -275,6 +288,13 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     }
 }
 
+.project__header{
+    margin-bottom: 1.5rem;
+}
+
+.project p {
+    margin-bottom: 0.75rem;
+}
 /*
 *
 * CONTACTS 
