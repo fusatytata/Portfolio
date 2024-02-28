@@ -9,15 +9,15 @@
     <body>
         <header>
             <nav class="navigation">
-                <a href="#technologies">Technologies</a>
-                <a href="#projects">Projects</a>
-                <a href="#other-skills">Other Skills</a>
-                <a href="#contacts">Contacts</a>
+                <a class="navigation__link" href="#technologies">Technologies</a>
+                <a class="navigation__link" href="#projects">Projects</a>
+                <a class="navigation__link" href="#other-skills">Other Skills</a>
+                <a class="navigation__link" href="#contacts">Contacts</a>
             </nav>
 
             <div class="introduction">
                 <h1>
-                    <small class ="caption">Frontend Developer</small>
+                    <small class="caption">Frontend Developer</small>
                     Šimon Kořený
                 </h1>
                 <p>
@@ -30,7 +30,7 @@
         <main class="main">
             <section id="technologies" class="technologies">
                 <h2>
-                    <small class ="caption">What Can I Work With</small>
+                    <small class="caption">What Can I Work With</small>
                     Techno&shy;logies
                 </h2>
                 <ul>
@@ -42,20 +42,20 @@
                 </ul>
             </section>
 
-            <section id="projects">
-                <h2 class="project__header">
-                    <small class ="caption">What Did I Do</small>
+            <section class="projects" id="projects">
+                <h2 class="projects__title">
+                    <small class="caption">What Did I Do</small>
                     Projects
                 </h2>
                 <article class="project">
                     <div class="project__description">
                         <h3 class="project__name">Project Alpha</h3>
-                        <p>
+                        <p class="project__text">
                             The description of the project, what was done by you, what have you learned. What were the
                             technologies and methodologies used to create this project.
                         </p>
-                        <br>
-    
+                        <br />
+
                         <p class="links">
                             <a href="#">See the website</a> and check the
                             <a href="#">source code on GitHub</a>
@@ -64,79 +64,77 @@
                     <div class="project__image">
                         <img src="https://satyr.dev/1296x972" alt="" width="1296" height="972" />
                     </div>
-                    </article>
+                </article>
 
-                    <article class="project">
-                        <div class="project__description">
-                            <h3 class="project__name">Project Beta</h3>
-                            <p>
-                                The description of the project, what was done by you, what have you learned. What were the
-                                technologies and methodologies used to create this project.
-                            </p>
-                            <br>
-                            <p class="links">
-                                <a href="#">See the website</a> and check the
-                                <a href="#">source code on GitHub</a>
-                            </p>
-                        </div>
-                        <div class="project__image">
-                            <img src="https://satyr.dev/1296x972" alt="" width="1296" height="972" />
-                        </div>
-                        </article>
-
-                        <article class="project">
-                            <div class="project__description">
-                                <h3 class="project__name">Project Gamma</h3>
-                                <p>
-                                    The description of the project, what was done by you, what have you learned. What were the
-                                    technologies and methodologies used to create this project.
-                                </p>
-                                <br>
-                                <p class="links">
-                                    <a href="#">See the website</a> and check the
-                                    <a href="#">source code on GitHub</a>
-                                </p>
-                            </div>
-                            <div class="project__image">
-                                <img src="https://satyr.dev/1296x972" alt="" width="1296" height="972" />
-                            </div>
-                            </article>
-
-            </section>
-                <section class="other__skills" id="other-skills">
-                    <h2>
-                        <small class ="caption">More About Me</small>
-                        Other skills
-                    </h2>
-                    <ul>
-                        <li>English B1</li>
-                        <li>Drivers license</li>
-                        <li>Divers license</li>
-                    </ul>
-                </section>
-            </main>
-
-            <footer class="contacts" id="contacts">
-                <h2>
-                    <small class ="caption">Let's Talk</small>
-                    Contacts
-                </h2>
-                <div class="contacts__content">
-                    <div class="contacts__photo">
-                        <img src="https://satyr.dev/384" alt="" width="384" height="384" />
+                <article class="project">
+                    <div class="project__description">
+                        <h3 class="project__name">Project Beta</h3>
+                        <p class="project__text">
+                            The description of the project, what was done by you, what have you learned. What were the
+                            technologies and methodologies used to create this project.
+                        </p>
+                        <br />
+                        <p class="links">
+                            <a href="#">See the website</a> and check the
+                            <a href="#">source code on GitHub</a>
+                        </p>
                     </div>
-                    <p class="contacts__text">
-                        mail me at
-                        <a href="mailto:simon.stripes@gmail.com">simon.stripes@gmail.com</a>
+                    <div class="project__image">
+                        <img src="https://satyr.dev/1296x972" alt="" width="1296" height="972" />
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project__description">
+                        <h3 class="project__name">Project Gamma</h3>
+                        <p class="project__text">
+                            The description of the project, what was done by you, what have you learned. What were the
+                            technologies and methodologies used to create this project.
+                        </p>
                         <br />
-                        give me a call at <a href="tel:+420608602260">608602260</a>
-                        <br />
-                        <a href="#">LinkedIn</a>
-                        <br />
-                        <a href="#">GitHub</a>
-                    </p>
+                        <p class="links">
+                            <a href="#">See the website</a> and check the
+                            <a href="#">source code on GitHub</a>
+                        </p>
+                    </div>
+                    <div class="project__image">
+                        <img src="https://satyr.dev/1296x972" alt="" width="1296" height="972" />
+                    </div>
+                </article>
+            </section>
+            <section class="other__skills" id="other-skills">
+                <h2>
+                    <small class="caption">More About Me</small>
+                    Other skills
+                </h2>
+                <ul>
+                    <li>English B1</li>
+                    <li>Drivers license</li>
+                    <li>Divers license</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="contacts" id="contacts">
+            <h2>
+                <small class="caption">Let's Talk</small>
+                Contacts
+            </h2>
+            <div class="contacts__content">
+                <div class="contacts__photo">
+                    <img src="https://satyr.dev/384" alt="" width="384" height="384" />
                 </div>
-            </footer>
-    
+                <p class="contacts__text">
+                    mail me at
+                    <a href="mailto:simon.stripes@gmail.com">simon.stripes@gmail.com</a>
+                    <br />
+                    give me a call at <a href="tel:+420608602260">608602260</a>
+                    <br />
+                    <a href="#">LinkedIn</a>
+                    <br />
+                    <a href="#">GitHub</a>
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
