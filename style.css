@@ -15,7 +15,7 @@ body {
     background-color: #172523;
     color: #ffffff; /*při pohledu na web je i bílá barva textu hodně dominantní, proto se ji hodí dát jako výchozí */
     margin: 0;
-    background-image: linear-gradient(to top, rgb(230, 230, 230), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
     background-size: 100%, 19.125rem 30.375rem;
     background-repeat: no-repeat;
     background-position: bottom, left 2.75rem top -3.75rem;
@@ -91,7 +91,7 @@ h1 {
         font-size: 6.875rem;
         line-height: 1;
         margin-top: 7.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.375rem;
     }
 }
 
@@ -107,7 +107,7 @@ h2 {
     h2 {
         font-size: 4rem;
         margin-top: 0rem;/* $$$ */
-        margin-bottom: 1.125rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -145,7 +145,7 @@ h3 {
     .caption {
         font-size: 1.375rem;
         line-height: 1.25;
-        margin-bottom: 0.875rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -154,7 +154,7 @@ h1 .caption {
 }
 
 @media (min-width: 40rem) {
-    h1 .captions {
+    h1 .caption {
         margin-bottom: 1.25rem; /* TODO nechat bottom nebo zvětšin mg top h1 a tohle úplně smazat? Nechat, protože h1 tu bude a .caption může zmizet - menší důležitost. */
     }
 }
@@ -210,6 +210,8 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
         padding-left: 3rem;
         padding-right: 3rem;
         max-width: calc(69.5rem + 2 * 3rem);
+        margin-bottom: 5.875rem;
+
     }
 }
 
@@ -217,6 +219,11 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     margin-bottom: 4rem;
 }
 
+@media (min-width: 40rem){
+    .technologies {
+        margin-bottom: 5.75rem; 
+}
+}
 .other__skills{
     margin-bottom: 4rem;
 }
@@ -240,14 +247,14 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     .project {
         max-width: initial;
 
-        flex-direction: row;
+        flex-direction: row-reverse;
         column-gap: 3rem;
 
         margin-top: 0rem; /* $$$ */ /* zadávat spíše mg bottom, ať to je jednodušší */
         margin-bottom: 4rem;
     }
     .project:nth-child(odd) {
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 }
 
@@ -292,9 +299,24 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     margin-bottom: 1.5rem;
 }
 
+@media (min-width: 40rem){
+    .project__header {
+        margin-bottom: 2rem;
+    }
+}
+
+
 .project p {
     margin-bottom: 0.75rem;
 }
+
+@media (min-width: 40rem){
+    .project p {
+        margin-bottom: 2.625rem;
+    }
+}
+
+
 /*
 *
 * CONTACTS 
