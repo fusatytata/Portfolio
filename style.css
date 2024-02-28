@@ -226,6 +226,12 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     margin-bottom: 4rem;
 }
 
+@media (min-width: 40rem) {
+    .other__skills {
+        margin-bottom: 5.875rem;
+    }
+}
+
 /*
 *
 * PROJECT
@@ -267,7 +273,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 }
 
 .project:last-child {
-    margin-bottom: 4rem;
+    margin-bottom: 5.75rem;
 }
 
 .project__description {
@@ -287,6 +293,13 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 .project__description :last-child {
     margin-bottom: 0;
 }
+
+@media (min-width: 40rem) {
+    .projects__title {
+        margin-bottom: 2rem;
+    }
+}
+
 
 .project__name {
     order: -2;
