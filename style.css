@@ -98,15 +98,14 @@ h1 {
 h2 {
     font-size: 3rem;
     line-height: 1.1;
-    margin-top: 0rem;/* $$$ */
+    margin-top: 0rem; /* $$$ */
     margin-bottom: 0.5rem;
 }
-
 
 @media (min-width: 40rem) {
     h2 {
         font-size: 4rem;
-        margin-top: 0rem;/* $$$ */
+        margin-top: 0rem; /* $$$ */
         margin-bottom: 1rem;
     }
 }
@@ -186,7 +185,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     justify-content: flex-end;
 }
 
-.navigation a {
+.navigation__link {
     text-align: right; /* Ošetřujeme tím situaci, pokud by se text zalomil na více řádků, tak to bude zalomené podle logiky věci - doprava. Bez toho se zalomený text hodí výchozím stylem - doleva */
     color: #ffffff;
     font-size: 1rem;
@@ -211,27 +210,36 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
         padding-right: 3rem;
         max-width: calc(69.5rem + 2 * 3rem);
         margin-bottom: 5.875rem;
-
     }
 }
 
-.technologies{
+.technologies {
     margin-bottom: 4rem;
 }
 
-@media (min-width: 40rem){
+@media (min-width: 40rem) {
     .technologies {
-        margin-bottom: 5.75rem; 
+        margin-bottom: 5.75rem;
+    }
 }
-}
-.other__skills{
+.other__skills {
     margin-bottom: 4rem;
 }
+
 /*
 *
 * PROJECT
 *
 */
+.project__wrapper{
+    margin-bottom: 4rem; /* TODO sedí i mobile??*/
+}
+
+@media (min-width: 40rem) {
+    .project__wrapper {
+        margin-bottom: 5.75rem;
+    }
+}
 
 .project {
     display: flex;
@@ -240,7 +248,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     max-width: 36rem;
 
     margin-top: 0rem; /* $$$ */
-    margin-bottom: 2.15rem;
+    margin-bottom: 2.125rem;
 }
 
 @media (min-width: 60rem) {
@@ -269,6 +277,10 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 @media (min-width: 60rem) {
     .project__description {
         display: block;
+
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: min-content;
     }
 }
 
@@ -295,27 +307,19 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     }
 }
 
-.project__header{
+.project__header {
     margin-bottom: 1.5rem;
 }
 
-@media (min-width: 40rem){
+@media (min-width: 40rem) {
     .project__header {
         margin-bottom: 2rem;
     }
 }
 
-
-.project p {
+.project__text {
     margin-bottom: 0.75rem;
 }
-
-@media (min-width: 40rem){
-    .project p {
-        margin-bottom: 2.625rem;
-    }
-}
-
 
 /*
 *
