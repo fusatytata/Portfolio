@@ -237,7 +237,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 * PROJECT
 *
 */
-.project__wrapper{
+.project__wrapper {
     margin-bottom: 4rem; /* TODO sedí i mobile??*/
 }
 
@@ -273,7 +273,13 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 }
 
 .project:last-child {
-    margin-bottom: 5.75rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 40rem) {
+    .project:last-child {
+        margin-bottom: 5.75rem;
+    }
 }
 
 .project__description {
@@ -294,12 +300,15 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     margin-bottom: 0;
 }
 
+.projects__title {
+    margin-bottom: 1.5rem;
+}
+
 @media (min-width: 40rem) {
     .projects__title {
         margin-bottom: 2rem;
     }
 }
-
 
 .project__name {
     order: -2;
