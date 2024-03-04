@@ -25,7 +25,6 @@ body {
     body {
         background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
         background-size: 100%, 42.375rem 67.5rem;
-        background-repeat: no-repeat;
         background-position: bottom, left 47.4rem bottom 183rem;
     }
 }
@@ -148,12 +147,12 @@ h3 {
     }
 }
 
-h1 .caption {
+.caption--white {
     color: #ffffff;
 }
 
 @media (min-width: 40rem) {
-    h1 .caption {
+    .caption--white {
         margin-bottom: 1.25rem; /* TODO nechat bottom nebo zvětšin mg top h1 a tohle úplně smazat? Nechat, protože h1 tu bude a .caption může zmizet - menší důležitost. */
     }
 }
