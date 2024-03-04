@@ -231,6 +231,16 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     }
 }
 
+.projects-title {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+    .projects-title {
+        margin-bottom: 2rem;
+    }
+}
+
 /*
 *
 * PROJECT
@@ -297,16 +307,6 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 
 .project__description :last-child {
     margin-bottom: 0;
-}
-
-.projects__title {
-    margin-bottom: 1.5rem;
-}
-
-@media (min-width: 40rem) {
-    .projects__title {
-        margin-bottom: 2rem;
-    }
 }
 
 .project__name {
