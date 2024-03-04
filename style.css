@@ -221,12 +221,13 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
         margin-bottom: 5.75rem;
     }
 }
-.other__skills {
+
+.other-skills {
     margin-bottom: 4rem;
 }
 
 @media (min-width: 40rem) {
-    .other__skills {
+    .other-skills {
         margin-bottom: 5.875rem;
     }
 }
@@ -246,6 +247,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 * PROJECT
 *
 */
+
 .project__wrapper {
     margin-bottom: 4rem; /* TODO sedí i mobile??*/
 }
