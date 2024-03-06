@@ -9,6 +9,13 @@ udělat screenshot, vypnout border-box a porovnat to ve fotopí/pxlburger
 
 html {
     font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
+    --main-padding: 1.25rem;
+}
+
+@media (min-width: 40rem) {
+    html {
+        --main-padding: 3rem;
+    }
 }
 
 body {
@@ -178,16 +185,14 @@ h3 {
 /* TODO převést na třídu
 mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti jako např. tato - */
 .main {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (min-width: 31rem) {
+@media (min-width: 40rem) {
     .main {
-        padding-left: 3rem;
-        padding-right: 3rem;
         max-width: calc(69.5rem + 2 * 3rem);
     }
 }
@@ -212,18 +217,12 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 
 .introduction {
     display: flow-root; /* řeší margin collapsing h1 - tohle zabrání všem jejím marginům, aby vylezly ven - margin h1 se deleguje na jejího rodiče */
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
     margin-left: auto;
     margin-right: auto;
-}
 
-@media (min-width: 31rem) {
-    .introduction {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: calc(69.5rem + 2 * 3rem);
-    }
+    max-width: calc(69.5rem + 2 * 3rem);
 }
 
 .section {
@@ -314,8 +313,10 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     }
 }
 
-.project__text {
-    margin-bottom: 2.125rem;
+@media (min-width: 40rem) {
+    .project__text {
+        margin-bottom: 2.125rem;
+    }
 }
 
 /*
@@ -325,19 +326,14 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 */
 
 .contacts {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5.75rem;
-}
 
-@media (min-width: 31rem) {
-    .contacts {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: calc(69.5rem + 2 * 3rem);
-    }
+    max-width: calc(69.5rem + 2 * 3rem);
 }
 
 .contacts__content {
