@@ -90,7 +90,7 @@ h1 {
         font-size: 6.875rem;
         line-height: 1;
         margin-top: 7.5rem;
-        margin-bottom: 1.375rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -169,7 +169,7 @@ h3 {
 
 @media (min-width: 40rem) {
     .caption--white {
-        margin-bottom: 1.25rem; /* TODO nechat bottom nebo zvětšin mg top h1 a tohle úplně smazat? Nechat, protože h1 tu bude a .caption může zmizet - menší důležitost. */
+        margin-bottom: 1.5rem; /* TODO nechat bottom nebo zvětšin mg top h1 a tohle úplně smazat? Nechat, protože h1 tu bude a .caption může zmizet - menší důležitost. */
     }
 }
 
@@ -232,7 +232,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 
 @media (min-width: 40rem) {
     .section {
-        margin-bottom: 5.75rem;
+        margin-bottom: 6rem;
     }
 }
 
