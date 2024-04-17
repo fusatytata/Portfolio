@@ -15,25 +15,20 @@ html {
 @media (min-width: 40rem) {
     html {
         --main-padding: 3rem;
+        --main-margin-bottom: 0; /* TODO: je to tu omylem nebo to má nějakou logiku, že je to až od 40rem??? */
     }
 }
 
 body {
     background-color: #172523;
     color: #ffffff; /*při pohledu na web je i bílá barva textu hodně dominantní, proto se ji hodí dát jako výchozí */
-    margin: 0;
-    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
-    background-size: 100%, 19.125rem 30.375rem;
+    
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0 0 0 / 0%) 37.5rem);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom, left 2.75rem top -3.75rem;
-}
+    background-position: bottom;
 
-@media (min-width: 60rem) {
-    body {
-        background-image: linear-gradient(to top, rgb(0 0 0), rgb(0 0 0 / 0%) 37.5rem), url(plamenaci.png);
-        background-size: 100%, 42.375rem 67.5rem;
-        background-position: bottom, right 0 top -14rem;
-    }
+    margin: 0;
 }
 
 a {
@@ -55,7 +50,7 @@ img {
 
 p {
     max-width: 29.125rem;
-    margin-bottom: 0;
+    margin-bottom: var(--main-margin-bottom);
 }
 
 p,
@@ -69,7 +64,7 @@ li {
 ul {
     padding-left: 1.75rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: var(--main-margin-bottom);
 }
 
 ul li {
@@ -101,6 +96,7 @@ h1 {
     }
 }
 
+
 h2 {
     font-size: 3rem;
     line-height: 1.1;
@@ -126,6 +122,34 @@ h3 {
 @media (min-width: 40rem) {
     h3 {
         font-size: 2.375rem;
+    }
+}
+
+.layout{
+    background-image: url(plamenaci.png);
+    background-size: 19.125rem 30.375rem;
+    background-repeat: no-repeat;
+    background-position: left 2.75rem top -4.75rem;
+
+    max-width: 90rem; 
+    margin: 0 auto; 
+
+}
+
+@media (min-width: 40rem) {
+    .layout{
+        background-size: 34rem 54rem;
+        background-position: right 0 top -15rem;
+
+    }
+}
+
+@media (min-width: 72rem) {
+    .layout{
+        background-image: url(plamenaci.png);
+        background-size: 42.375rem 67.5rem;
+        background-position: right 0 top -15rem;
+
     }
 }
 
@@ -218,7 +242,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 .introduction {
     display: flow-root; /* řeší margin collapsing h1 - tohle zabrání všem jejím marginům, aby vylezly ven - margin h1 se deleguje na jejího rodiče */
     padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
+    padding-right: var(--main-padding); /*aby se to zalamovalo dřív a plameňák nezasahoval do textu, tak tam dát padding-right 9.5rem??? */
     margin-left: auto;
     margin-right: auto;
 
@@ -281,7 +305,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 }
 
 .project__description :last-child {
-    margin-bottom: 0;
+    margin-bottom: var(--main-margin-bottom);
 }
 
 .project__name {
@@ -299,7 +323,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
         flex-shrink: 1;
         flex-basis: 40.5rem;
 
-        margin-bottom: 0;
+        margin-bottom: var(--main-margin-bottom);
     }
 }
 
@@ -333,7 +357,7 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     margin-right: auto;
     margin-bottom: 5.75rem;
 
-    max-width: calc(69.5rem + 2 * 3rem);
+    max-width: calc(69.5rem + 2 * var(--main-padding));
 }
 
 .contacts__content {
