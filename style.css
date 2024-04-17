@@ -377,3 +377,8 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     flex-shrink: 1;
     flex-basis: 12rem; /*mohly by tu být i px, ale obrázek se nebude zvětšovat při zvětšení písma - teď (při remech) se to zvětšuje  */
 }
+
+.contacts__photo img {
+    border-radius: 100px;
+
+}
