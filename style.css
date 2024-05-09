@@ -8,7 +8,7 @@ udělat screenshot, vypnout border-box a porovnat to ve fotopí/pxlburger
 }
 
 html {
-    font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
+    font-family: "Space Grotesk", "Helvetica Neue", "Arial", sans-serif;
     --main-padding: 1.25rem;
 }
 
@@ -74,7 +74,7 @@ ul li {
 h1,
 h2,
 h3 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Bitter", "Times New Roman", Times, serif;
     font-weight: normal; /* 400 = normal */
 }
 
@@ -155,7 +155,7 @@ h3 {
 
 .caption {
     color: #f6766c;
-    font-family: "Avenir", "Helvetica Neue", "Arial", sans-serif;
+    font-family: "Space Grotesk", "Helvetica Neue", "Arial", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.25em;
     font-weight: 800;
