@@ -134,7 +134,7 @@ h3 {
 }
 
 .layout{
-    background-image: url(plamenaci\ \(1\).webp);
+    background-image: url(plamenaci.webp);
     background-size: 19.125rem 19.8rem;
     background-repeat: no-repeat;
     background-position: left 2.75rem top 4.25rem;
@@ -154,7 +154,7 @@ h3 {
 
 @media (min-width: 72rem) {
     .layout{
-        background-image: url(plamenaci\ \(1\).webp);
+        background-image: url(plamenaci.webp);
         background-size: 42.375rem 42.5rem;;
         background-position: right -5px top 6rem;
 
