@@ -4,12 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fira+Mono:wght@400;500;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fira+Mono:wght@400;500;700&family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
         <title>Šimon Kořený - Frontend Developer</title>
     </head>
     <body>
@@ -28,10 +34,17 @@
                         <span class="simon">Šimon</span>
                         <span class="koreny">Kořený</span>
                     </h1>
-                    <p>
-                        I’m Šimon, an aspiring front end developer based in Ostrava, Czechia, and this is my portfolio
-                        dummy (so far). Here are the words that tell you basic stuff about me. Not much details but also
-                        a bit of my personality shows here.
+                    <p class="introduction__paragraph">
+                        I’m Šimon, an aspiring front end developer based in Ostrava, Czechia, and this is my portfolio.
+                    </p>
+                    <p class="introduction__paragraph">
+                        Because I enjoy solving problems creatively and literally seeing the results of my work,
+                        frontend was an obvious choice for me. 
+                    </p>
+                    <p class="introduction__paragraph">
+                        Over the past six months or so, I've supplemented my high
+                        school knowledge of HTML with modern CSS and JavaScript, including React. I am now looking for a
+                        job where I can grow quickly thanks to my tenacity.
                     </p>
                 </div>
             </header>
@@ -60,14 +73,15 @@
                     <div class="section">
                         <article class="project">
                             <div class="project__description">
-                                <h3 class="project__name">Project Alpha</h3>
+                                <h3 class="project__name">Personal Web Portfolio</h3>
                                 <p class="project__text">
-                                    The description of the project, what was done by you, what have you learned. What
-                                    were the technologies and methodologies used to create this project.
+                                    The first static website in HTML and CSS. I created it according to the graphic
+                                    specification in Figma using the BEM methodology. Portfolio also taught me to think
+                                    about websites on different devices and screens: responsiveness.
                                 </p>
                                 <p class="links">
                                     <a class="project__anchor">See the website</a> and check the
-                                    <a class="project__anchor"">source code on GitHub</a>
+                                    <a class="project__anchor">source code on GitHub</a>
                                 </p>
                             </div>
                             <div class="project__image">
@@ -77,10 +91,12 @@
 
                         <article class="project">
                             <div class="project__description">
-                                <h3 class="project__name">Project Beta</h3>
+                                <h3 class="project__name">Coffee Brewing Calculator</h3>
                                 <p class="project__text">
-                                    The description of the project, what was done by you, what have you learned. What
-                                    were the technologies and methodologies used to create this project.
+                                    A calculator that makes brewing coffee easier. Written in pure JavaScript and styled
+                                    with Bootstrap. Calculation of the amount of coffee and water, a stopwatch, or a
+                                    recommendation as to whether it is appropriate to drink coffee at a given time and
+                                    location due to sunrise and sunset. It gets this data from a public API.
                                 </p>
                                 <p class="links">
                                     <a class="project__anchor" href="#">See the website</a> and check the
@@ -94,10 +110,11 @@
 
                         <article class="project">
                             <div class="project__description">
-                                <h3 class="project__name">Project Gamma</h3>
+                                <h3 class="project__name">Booking Calendar</h3>
                                 <p class="project__text">
-                                    The description of the project, what was done by you, what have you learned. What
-                                    were the technologies and methodologies used to create this project.
+                                    First standalone project in React. It started as an assignment during the admissions
+                                    process and I continue to work on it. For now, it allows you to scroll through the
+                                    days from the current day and select times on a given day up to a limit.
                                 </p>
                                 <p class="links">
                                     <a class="project__anchor">See the website</a> and check the

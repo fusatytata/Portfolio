@@ -257,6 +257,10 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
     max-width: calc(69.5rem + 2 * 3rem);
 }
 
+.introduction__paragraph{
+    padding-bottom: 1rem;
+}
+
 .section {
     margin-bottom: 4rem;
 }
