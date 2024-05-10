@@ -30,16 +30,24 @@ body {
 
     margin: 0;
 }
+a:hover {
+    color: #f6766c;
+    
+    -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);
+}
 
 a {
     color: #f6766c;
     /* text-decoration: none; -- původně jsem si myslel, že to tam není, ale při zoomu tam prostě je teňounký*/
     font-weight: 800;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
 }
 
-a:hover {
-    color: #f6766c;
-}
 
 img {
     display: block;
@@ -315,6 +323,11 @@ mrknout na to, jestli nevytvořit obecnou třídu, která má stejné vlastnosti
 .project__image {
     order: -1;
     margin-bottom: 1.5rem;
+}
+
+.project__anchor:hover {
+    color: white;
+
 }
 
 @media (min-width: 60rem) {
